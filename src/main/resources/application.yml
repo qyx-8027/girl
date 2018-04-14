@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/dbgirl
+    username: root
+    password: chan
+  jpa:
+    hibernate:
+      ddl-auto: update  #运行时自动创建表
+    show-sql: true      #等于show_sql + format_sql
